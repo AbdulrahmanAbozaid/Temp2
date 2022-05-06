@@ -91,6 +91,8 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     border-style: solid;
     transition: all .5s;
 }
@@ -99,8 +101,6 @@ ul {
     border-width: 2px 0;
     transform: scaleX(0) scaleY(1);
     transform-origin: left;
-    width: 95%;
-    height: 94%;
 }
 
 .header .header-content .nav>ul>li>a:hover::before {
@@ -110,8 +110,6 @@ ul {
 .header .header-content .nav>ul>li>a::after {
     border-width: 0 2px;
     transition: all .5s;
-    width: 93%;
-    height: 100%;
     transform: scaleX(1) scaleY(0);
 }
 
@@ -293,7 +291,7 @@ ul {
 }
 
 .categories .contents .second .left .bullets li {
-    width: 50px;
+    width: 55px;
     height: 2px;
     background-color: #7b5244;
 }
