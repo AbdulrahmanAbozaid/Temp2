@@ -19,7 +19,7 @@ body {
     padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 85%;
 }
 
 a {
@@ -66,6 +66,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header .header-content .logo img {
@@ -94,12 +95,12 @@ ul {
     right: 0;
     bottom: 0;
     border-style: solid;
-    transition: all .5s;
 }
 
 .header .header-content .nav>ul>li>a::before {
     border-width: 2px 0;
     transform: scaleX(0) scaleY(1);
+    transition: all .3s linear;
     transform-origin: left;
 }
 
@@ -109,7 +110,7 @@ ul {
 
 .header .header-content .nav>ul>li>a::after {
     border-width: 0 2px;
-    transition: all .5s;
+    transition: all .3s linear;
     transform: scaleX(1) scaleY(0);
 }
 
@@ -416,14 +417,19 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-block: 45px;
+    flex-wrap: wrap;
 }
 
 .featured-products .container .contents .products .item {
-    width: fit-content;
+    width: 30%;
 }
 
 .featured-products .container .contents .products .item .image {
     position: relative;
+}
+
+.featured-products .container .contents .products .item .image img {
+    max-width: 100%;
 }
 
 .featured-products .container .contents .products .item .image .overlay {
@@ -455,7 +461,7 @@ ul {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    margin-inline: 2px;
+    margin-inline: -1px;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
